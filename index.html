@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placar Eletrônico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="placar-container">
+        <h1>Placar Eletrônico</h1>
+        <div class="placar">
+            <div class="time">
+                <h2>Time A</h2>
+                <p id="score-timeA">0</p>
+                <button onclick="incrementarScore('A')">+1 Time A</button>
+            </div>
+            <div>
+                <h2>Placar</h2>
+                <div class="botoes">
+                    <button onclick="iniciarNovoJogo()">Iniciar Novo Jogo</button>
+                </div>
+                <br><br><br>
+                <div class="tempo">
+                    <h2>Tempo</h2>
+                    <p id="tempo">00:00</p>
+                </div> 
+                <br><br><br>  
+                <div class="botoes">
+                    <button onclick="finalizarPartida()">Finalizar Partida</button>
+                </div>
+            </div>
+            
+            <div class="time">
+                <h2>Time B</h2>
+                <p id="score-timeB">0</p>
+                <button onclick="incrementarScore('B')">+1 Time B</button>
+            </div>
+        </div>
+       
+        <div id="vencedor" class="vencedor"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
